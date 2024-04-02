@@ -23,7 +23,7 @@ body {
     height: 80vh;
     border-radius: 20px;
     margin: 10px;
-    cursor: pointer; /* курсор пальчик*/
+    cursor: grab; /* курсор пальчик*/
     color: #fff;
     flex: 1;
     background-size: cover;
