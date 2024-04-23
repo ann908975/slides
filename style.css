@@ -11,7 +11,7 @@ body {
   background: #111;
   height: 100vh;
   display: flex;
-  justify-content: center; /*возможно глючил - есть задержка сервера виртуального - тут пока четко  */
+  justify-content: center;
   align-items: center;
 }
 .container {
@@ -23,28 +23,28 @@ body {
     height: 80vh;
     border-radius: 20px;
     margin: 10px;
-    cursor: grab; /* курсор пальчик*/
+    cursor: grab;
     color: #fff;
     flex: 1;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    position: relative; /* тут была пропущена строка*/
-    transition: all 500ms ease-in-out; /* переход слайдов из одного в другой*/
+    position: relative;
+    transition: all 500ms ease-in-out;
 }
-.slide h3{      /* тут почему-то названия упали вниз и в кучу??*/
+.slide h3{   
     position: absolute;
     font-size: 24px;
-    bottom: 20px; /* тут вручную поднял и сдвинул надпись line 36, 37*/
+    bottom: 20px;
     left: 20px;
     margin: 0;
-    opacity: 0; /* тут прячут названия карточек */ 
+    opacity: 0;
 }
-/* начало работы с анимацией: выбор 1 активного элемента 34 строка html для Aston*/
+
 .slide.active{
-    flex: 10; /* тут увеличение размера слайда*/
+    flex: 10; 
 }
-.slide.active h3{       /* если слайд активный то применяем некоторае стили */
+.slide.active h3{    
     opacity: 1;
-    transition: opacity 0.3s ease-in 0.4s; /* задаем анимацию: свойство, длительность ее кинематику*/
+    transition: opacity 0.2s ease-in 0.5s;
 }
